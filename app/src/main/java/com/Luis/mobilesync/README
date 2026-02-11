@@ -1,0 +1,3 @@
+Project Description: A lightweight mobile sync engine that adapts its behavior to environmental context — such as network type, signal strength, battery level, app usage, and data priority. This differs from traditional sync tools (e.g., Firebase, PouchDB), which use fixed intervals or push/pull methods regardless of real-world context.
+
+Most users experience fluctuating connectivity (e.g., 3G > no signal > WiFi). Apps often sync inefficiently or fail silently. Few tools adapt sync frequency or conflict resolution based on actual mobile context. Could improve battery life, user satisfaction, and data consistency in real apps, especially in constrained environments.

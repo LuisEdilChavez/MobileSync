@@ -1,13 +1,13 @@
 package com.Luis.mobilesync;
 
-import android.util.log;
+import android.util.Log;
 
 public class SyncEngine {
 
     private static final String TAG = "SyncEngine";
 
     public void performSync(String decision) {
-        switch(decision){
+        switch (decision) {
             case "LOW_POWER_SYNC":
                 syncLowPower();
                 break;
@@ -22,6 +22,7 @@ public class SyncEngine {
                 normalSync();
                 break;
         }
+    }
         private void syncLowPower() {
             Log.d(TAG, "Sync: LOW POWER mode - minimal background syncing");
 

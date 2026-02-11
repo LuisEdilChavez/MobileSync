@@ -24,14 +24,13 @@ public class MotionSensor implements SensorEventListener {
         float y = event.values[1];
         float z = event.values[2];
         double magnitude = Math.sqrt(x*x + y*y + z*z);
-        isMoving = magnitude > 1.5; // threshold, tweak as needed
+        isMoving = magnitude > 1.5;
     }
 
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) { }
 
     public String getMotionState(){
-
         return isMoving ? "moving" : "stationary";
     }
 }
